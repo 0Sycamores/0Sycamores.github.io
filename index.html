@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>nixos-restic-backup</title>
+<style>
+  body { font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+         max-width: 46rem; margin: 4rem auto; padding: 0 1.25rem; line-height: 1.65;
+         color: #1a1a1a; background: #fff; }
+  @media (prefers-color-scheme: dark) { body { color: #e6e6e6; background: #161616; } a { color: #7cb3ff; } }
+  h1 { font-size: 1.6rem; margin-bottom: .25rem; }
+  .sub { color: #666; margin-top: 0; }
+  @media (prefers-color-scheme: dark) { .sub { color: #999; } }
+  ul { padding-left: 1.2rem; }
+  code { background: rgba(127,127,127,.15); padding: .1em .35em; border-radius: 4px; font-size: .9em; }
+</style>
+</head>
+<body>
+
+<h1>nixos-restic-backup</h1>
+<p class="sub">A personal, single-user backup utility.</p>
+
+<p>
+  <strong>nixos-restic-backup</strong> is a private command-line tool that backs up the
+  owner's own computers to the owner's own Google Drive. It runs locally on the owner's
+  machines. There is no server, no account system, and no third-party service involved.
+</p>
+
+<h2>What it does</h2>
+<ul>
+  <li>Reads the owner's local files and uploads an encrypted backup archive to Google Drive.</li>
+  <li>Uses Google Drive's <code>drive.file</code> scope, which grants access
+      <strong>only to files and folders this application itself creates</strong>.
+      It cannot see, read, modify, or delete any other file in the owner's Drive.</li>
+  <li>Stores no data anywhere except the owner's own machines and the owner's own Drive.</li>
+</ul>
+
+<h2>Who uses it</h2>
+<p>
+  Exactly one person: the owner of the Google account that authorizes it. The application
+  is not distributed, has no other users, and collects nothing about anyone else.
+</p>
+
+<h2>Legal</h2>
+<ul>
+  <li><a href="./privacy.html">Privacy Policy</a></li>
+</ul>
+
+<p class="sub">Last updated: 2026-11-18</p>
+
+</body>
+</html>

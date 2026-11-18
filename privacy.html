@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy — nixos-restic-backup</title>
+<style>
+  body { font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+         max-width: 46rem; margin: 4rem auto; padding: 0 1.25rem; line-height: 1.65;
+         color: #1a1a1a; background: #fff; }
+  @media (prefers-color-scheme: dark) { body { color: #e6e6e6; background: #161616; } a { color: #7cb3ff; } }
+  h1 { font-size: 1.6rem; margin-bottom: .25rem; }
+  h2 { font-size: 1.1rem; margin-top: 2rem; }
+  .sub { color: #666; margin-top: 0; }
+  @media (prefers-color-scheme: dark) { .sub { color: #999; } }
+  ul { padding-left: 1.2rem; }
+  li { margin: .35rem 0; }
+  code { background: rgba(127,127,127,.15); padding: .1em .35em; border-radius: 4px; font-size: .9em; }
+</style>
+</head>
+<body>
+
+<h1>Privacy Policy</h1>
+<p class="sub">nixos-restic-backup · a personal, single-user backup utility<br>Last updated: 2026-11-18</p>
+
+<p>
+  This policy describes how <strong>nixos-restic-backup</strong> ("the application")
+  handles data when the owner authorizes it to access their Google Drive account.
+</p>
+
+<h2>1. Who operates this application</h2>
+<p>
+  The application is operated by a single individual for their own personal use, on their
+  own computers. It is not offered as a service to the public. It has no other users and
+  no user registration.
+</p>
+
+<h2>2. What Google data the application accesses</h2>
+<p>
+  The application requests exactly one Google OAuth scope:
+</p>
+<ul>
+  <li><code>https://www.googleapis.com/auth/drive.file</code></li>
+</ul>
+<p>
+  This is Google's per-file access scope. It allows the application to create and manage
+  <strong>only the files and folders that this application itself creates</strong>.
+  The application cannot list, read, modify, share, or delete any other file in the
+  Google Drive account, including files uploaded by the user or by any other application.
+</p>
+<p>
+  The application does <strong>not</strong> request access to email, contacts, calendar,
+  profile information, or any other Google service.
+</p>
+
+<h2>3. What data is stored, and where</h2>
+<ul>
+  <li><strong>Backup data:</strong> an encrypted archive of the owner's own local files is
+      written to a folder in the owner's own Google Drive. The archive is encrypted on the
+      owner's machine before upload, so Google Drive only ever stores ciphertext.</li>
+  <li><strong>OAuth credentials:</strong> the refresh token issued by Google is stored
+      only on the owner's own machines, inside a file encrypted with the owner's own
+      encryption key. It is never transmitted to any party other than Google itself.</li>
+  <li><strong>Nothing else</strong> is stored. There is no database, no server-side
+      storage, no analytics, no telemetry, no crash reporting, and no advertising SDK.</li>
+</ul>
+
+<h2>4. Data sharing</h2>
+<p>
+  No data is shared with, sold to, or disclosed to any third party. The only network
+  destination the application contacts is Google's own API endpoints, in order to upload
+  and manage the owner's backup files. The only data that reaches Google is the
+  application's own backup ciphertext.
+</p>
+
+<h2>5. Data retention and deletion</h2>
+<ul>
+  <li>Backup archives remain in the owner's Google Drive until the owner deletes them,
+      either through the Google Drive interface or through the application's pruning
+      settings.</li>
+  <li>The access token held locally can be revoked at any time at
+      <a href="https://myaccount.google.com/permissions" rel="noopener">
+      myaccount.google.com/permissions</a>, which immediately ends the application's
+      ability to access Google Drive.</li>
+  <li>Deleting the application and its local configuration removes all locally stored
+      credentials.</li>
+</ul>
+
+<h2>6. Security</h2>
+<p>
+  Backups are encrypted client-side before upload, so stored data is unreadable without
+  the owner's encryption key. OAuth credentials are stored only in encrypted files on
+  the owner's machines, readable only by the owner's operating-system user account.
+</p>
+
+<h2>7. Children</h2>
+<p>
+  The application is a personal tool and is not directed at children. It collects no
+  personal information from anyone.
+</p>
+
+<h2>8. Changes to this policy</h2>
+<p>
+  If this policy changes, the "Last updated" date above will change accordingly.
+  Because the application has a single user, such changes will be reviewed by that user
+  directly.
+</p>
+
+<h2>9. Contact</h2>
+<p>
+  Questions about this policy can be sent to
+  <a href="mailto:heyredpoll@gmail.com">heyredpoll@gmail.com</a>.
+</p>
+
+<p class="sub"><a href="./index.html">← Back</a></p>
+
+</body>
+</html>
